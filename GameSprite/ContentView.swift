@@ -38,8 +38,12 @@ struct ContentView: View {
     }
 
     var body: some View {
-        SpriteView(scene: scene)
-            .ignoresSafeArea()
+        ZStack {
+            SpriteView(scene: scene)
+                .ignoresSafeArea()
+            
+            Image("swiftui")
+        }
     }
 }
 
